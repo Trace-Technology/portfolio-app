@@ -75,7 +75,7 @@ export default function Retainers() {
           {plans.map((plan) => (
             <div
               key={plan.name}
-              className={`relative rounded-2xl border p-8 ${
+              className={`relative flex flex-col rounded-2xl border p-8 ${
                 plan.highlighted
                   ? "border-accent-blue/30 bg-accent-blue/5 shadow-xl shadow-accent-blue/10"
                   : "border-white/5 bg-white/[0.02]"
@@ -104,7 +104,7 @@ export default function Retainers() {
                 ))}
               </ul>
 
-              <div className="mt-8">
+              <div className="mt-auto pt-8">
                 <button
                   onClick={() => setModalOpen(true)}
                   className={`w-full rounded-lg px-6 py-3 text-sm font-semibold transition-all ${
